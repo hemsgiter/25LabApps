@@ -14,17 +14,17 @@
                 margin: auto auto;
             }
             div {
-                background-color: #f9f9f988;
+                background-color: #5b5b5bbd;
                 padding: 10px;
                 margin-bottom: 10px;
                 cursor: pointer;
                 border-radius: 10px;
             }
             div:hover {
-                background-color: #f0f0f0;
+                background-color: #a3a9ff;
             }
             #main {
-                background-color: #f0f0f0;
+                background-color: #f0f0f094;
                 padding: 10px;
                 margin-bottom: 10px;
             }
@@ -32,10 +32,41 @@
                 text-align: center;
                 margin-top: 20px;
             }
+
+            #lvl01{
+
+                    background-color: mediumseagreen;
+                    padding: 10px;
+                    align-items: center;
+            }
+
+             #lvl02{
+
+                    background-color: yellow;
+                    padding: 20px;
+                    align-items: center;
+            }
+
+            #lvl03{
+
+                    background-color: orange;
+                    padding: 30px;
+                    align-items: center;
+                    
+            }
+            #lvl04{
+
+                    background-color: orangered;
+                    padding: 30px;
+                    align-items: center;
+}
+
         </style>
 </head>
 
 <body>
+    
+
     <div id="main">
         <h1>Família Henrique</h1>
     </div>
@@ -50,6 +81,9 @@
     </div>
 
 </div>
+
+
+<div id="lvl02">
 
     <div hx-get="./bio/tia.html" hx-swap="innerHTML" hx-target="#main">
         Tia
@@ -67,11 +101,11 @@
         Mãe
     </div>
 
-    <div hx-get="./bio/eu.html" hx-swap="innerHTML" hx-target="#main">
-        Eu
-    </div>
+</div>
 
-    <div hx-get="./bio/irma_1.html" hx-swap="innerHTML" hx-target="#main">
+<div id="lvl03">
+   
+ <div hx-get="./bio/irma_1.html" hx-swap="innerHTML" hx-target="#main">
         Irmã 1
     </div>
 
@@ -86,6 +120,16 @@
     <div hx-get="./bio/primas.html" hx-swap="innerHTML" hx-target="#main">
         Prima
     </div>
+
+</div>
+
+<div id="lvl04">
+
+    <div hx-get="./bio/eu.html" hx-swap="innerHTML" hx-target="#main">
+        Eu
+    </div>
+</div>
+</div>
 
     <footer>
         Vê o site do <a href="https://htmx.org/">HTMX</a> para mais informação sobre esta tecnologia.
